@@ -1,0 +1,27 @@
+{
+  "name": "nds",
+  "version": "1.0.0",
+  "description": "Micro service for delivering updates",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "queue": "node processor",
+    "queue:dev": "nodemon processor"
+  },
+  "author": "Ismailian",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bull": "^4.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-api-cache": "^1.0.4",
+    "express-rate-limit": "^7.2.0",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
